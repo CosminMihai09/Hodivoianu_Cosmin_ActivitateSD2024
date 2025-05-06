@@ -1,0 +1,22 @@
+# Ignoră fișiere generate de Visual Studio
+.vs/
+*.user
+*.suo
+
+# Ignoră fișiere de build
+*.obj
+*.exe
+*.log
+*.pdb
+*.idb
+*.ipch
+*.aps
+*.ncb
+*.sdf
+*.opensdf
+*.tlog
+
+# Folderul de build
+Debug/
+Release/
+x64/
