@@ -90,58 +90,58 @@ int cauta(int v[], int n, int val) {
     return -1;
 }
 
-int main() {
-    int v[MAX], n = 0, opt;
-
-    do {
-        printf("\n=== MENIU VECTOR ===\n");
-        printf("1. Citire de la tastatura\n");
-        printf("2. Citire din fisier\n");
-        printf("3. Afisare vector\n");
-        printf("4. Inserare element\n");
-        printf("5. Stergere element\n");
-        printf("6. Cautare element\n");
-        printf("7. Scriere in fisier\n");
-        printf("0. Iesire\n");
-        printf("Alege optiunea: ");
-        scanf("%d", &opt);
-
-        switch (opt) {
-        case 1: citire_tastatura(v, &n); break;
-        case 2: citire_fisier(v, &n); break;
-        case 3: afisare_vector(v, n); break;
-        case 4: {
-            int val, poz;
-            printf("Valoare de inserat: ");
-            scanf("%d", &val);
-            printf("Pozitie: ");
-            scanf("%d", &poz);
-            inserare(v, &n, poz, val);
-            break;
-        }
-        case 5: {
-            int poz;
-            printf("Pozitie de sters: ");
-            scanf("%d", &poz);
-            stergere(v, &n, poz);
-            break;
-        }
-        case 6: {
-            int val;
-            printf("Valoare de cautat: ");
-            scanf("%d", &val);
-            int poz = cauta(v, n, val);
-            if (poz != -1)
-                printf("Element gasit pe pozitia %d.\n", poz);
-            else
-                printf("Elementul nu a fost gasit.\n");
-            break;
-        }
-        case 7: scriere_fisier(v, n); break;
-        case 0: printf("Iesire din program.\n"); break;
-        default: printf("Optiune invalida.\n");
-        }
-    } while (opt != 0);
-
-    return 0;
-}
+//int main() {
+//    int v[MAX], n = 0, opt;
+//
+//    do {
+//        printf("\n=== MENIU VECTOR ===\n");
+//        printf("1. Citire de la tastatura\n");
+//        printf("2. Citire din fisier\n");
+//        printf("3. Afisare vector\n");
+//        printf("4. Inserare element\n");
+//        printf("5. Stergere element\n");
+//        printf("6. Cautare element\n");
+//        printf("7. Scriere in fisier\n");
+//        printf("0. Iesire\n");
+//        printf("Alege optiunea: ");
+//        scanf("%d", &opt);
+//
+//        switch (opt) {
+//        case 1: citire_tastatura(v, &n); break;
+//        case 2: citire_fisier(v, &n); break;
+//        case 3: afisare_vector(v, n); break;
+//        case 4: {
+//            int val, poz;
+//            printf("Valoare de inserat: ");
+//            scanf("%d", &val);
+//            printf("Pozitie: ");
+//            scanf("%d", &poz);
+//            inserare(v, &n, poz, val);
+//            break;
+//        }
+//        case 5: {
+//            int poz;
+//            printf("Pozitie de sters: ");
+//            scanf("%d", &poz);
+//            stergere(v, &n, poz);
+//            break;
+//        }
+//        case 6: {
+//            int val;
+//            printf("Valoare de cautat: ");
+//            scanf("%d", &val);
+//            int poz = cauta(v, n, val);
+//            if (poz != -1)
+//                printf("Element gasit pe pozitia %d.\n", poz);
+//            else
+//                printf("Elementul nu a fost gasit.\n");
+//            break;
+//        }
+//        case 7: scriere_fisier(v, n); break;
+//        case 0: printf("Iesire din program.\n"); break;
+//        default: printf("Optiune invalida.\n");
+//        }
+//    } while (opt != 0);
+//
+//    return 0;
+//}
